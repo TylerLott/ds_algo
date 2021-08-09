@@ -29,7 +29,7 @@ def removeNthFromEnd(head, n: int):
 
 def helper(self, node, n) -> int:
     if node.next:
-        i = self.helper(node.next, n) + 1
+        i = helper(node.next, n) + 1
     else:
         i = 1
     if i == n + 1:
